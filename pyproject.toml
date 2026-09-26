@@ -1,0 +1,18 @@
+[project]
+name = "stepwise-migrations"
+version = "0.1.0"
+description = "A small, dependency-free SQL migration library with a thin CLI."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "sparrow-bits" }]
+
+[project.scripts]
+stepwise-migrations = "stepwise_migrations.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["stepwise_migrations*"]
