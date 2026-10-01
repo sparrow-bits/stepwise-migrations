@@ -83,6 +83,12 @@ Early skeleton. The CLI only supports sqlite for now; the core planning
 functions are database-agnostic and the CLI's storage backend is meant
 to become swappable later.
 
+## Tests
+
+```
+python -m unittest discover -s tests -t .
+```
+
 ## License
 
 MIT, see LICENSE.
